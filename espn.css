@@ -47,22 +47,27 @@ body {
     position: relative;
 }
 
+.nav__item {
+    z-index: 10;
+    background-color: black;
+}
+
 .nav__item:hover {
     cursor: pointer;
-    z-index: 10;
 }
 
 .nav__dropdown {
     display: flex;
     flex-flow: column;
     position: absolute;
-    padding-top: 40px;
+    top: 20px;
     gap: 8px;
     white-space: nowrap;
     z-index: 1;
     opacity: 0%;
     transition: all .3s;
     pointer-events: none;
+    background-color: #E4E2B4;
 }
 
 .nav__dropdown a {
@@ -83,4 +88,19 @@ body {
 .nav__dropdown:hover {
     opacity: 100%;
     pointer-events: all;
+}
+
+.highlights {
+    background-color: #E4E2B4;
+}
+
+.highlights__img__container {
+    display: flex;
+    gap: 5px;
+}
+
+.highlights__img__container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
