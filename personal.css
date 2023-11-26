@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.details {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    gap: 4px;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    color: green;
+}
+
+h2, h3, h4 {
+    color: orange;
+}
+
+.img {
+    width: 30%;
+    height: 30%;
+}
